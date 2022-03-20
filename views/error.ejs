@@ -1,0 +1,20 @@
+<%-layout( "/boilerplate/boilerplate" ) %>
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-8">
+            <div class="alert alert-danger" role="alert">
+                <h4 class="alert-heading">
+                    <%=err.name%>
+                </h4>
+                <p>
+                    <%=err.message%>
+                </p>
+                <p>
+                    <%=err.stack %>
+                </p>
+                <hr>
+                <p class="mb-0">
+                    <%=err.status %>
+                </p>
+            </div>
+        </div>
+    </div>
